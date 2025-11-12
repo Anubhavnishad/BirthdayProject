@@ -114,16 +114,17 @@
     <main class="page-box">
       <div class="hero">
         <div class="hero-left">
-               <audio id="bgAudio" loop>
-              <source src="assets/sounds_effect/bg_music.mp3" type="audio/mpeg">
-              <source src="assets/sounds_effect/bg_music.mp3" type="audio/ogg">
-          </audio>
           <h1 class="hero-title">ANSWER ME</h1>
           <hr><br>
            <div id="accept-video-wrap" class="accept-video-wrap">
-          <video id="accept-video" playsinline style="max-width:100%;border-radius:10px">
-            <source src="assets/videos/wrong.mp4" type="video/mp4">
-          </video>
+              <!-- Background video -->
+  <video id="bgVideo" autoplay muted playsinline loop preload="auto">
+    <source src="assets/videos/babu.mp4" type="video/mp4">
+  </video>
+          <audio id="bgAudio" loop>
+         <source src="assets/sounds_effect/babu.mp3" type="audio/mpeg">
+         <source src="assets/sounds_effect/babu.mp3" type="audio/ogg">
+        </audio>
         </div>
           <label class="custom-radio">
             <input type="radio" name="q2" value="a">Hai
