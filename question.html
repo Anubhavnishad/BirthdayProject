@@ -149,13 +149,13 @@
 
   <script>
     // 🎵 Background music autoplay — works on mobile tap too
-    const bg = document.getElementById("bgmusic");
-    bg.volume = 0.25;
+   const audio = document.getElementById('bgAudio');
+   audio.play();
 
     bg.play().catch(() => {
       const startMusic = () => {
-        bg.muted = false;
-        bg.play().catch(()=>{});
+        audio.muted = false;
+        audio.play().catch(()=>{});
         document.removeEventListener("touchstart", startMusic);
         document.removeEventListener("click", startMusic);
       };
