@@ -110,14 +110,15 @@
     margin: 16px 0;
   }
 
-  #accept-video-wrap video {
+#accept-video-wrap video {
     width: 100%;
     max-width: 320px;      /* Max width for mobile */
     height: auto;          /* Maintain aspect ratio */
     border-radius: 16px;   /* Rounded corners */
     object-fit: cover;     /* Fill nicely */
     display: block;
-  }
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3); /* Soft shadow */
+}
 
   @media (max-width: 480px) {
     #accept-video-wrap video {
@@ -188,6 +189,17 @@
       document.addEventListener("touchstart", startMusic);
       document.addEventListener("click", startMusic);
     });
+    // Try to play video automatically
+video.play().catch(() => {
+  // If autoplay blocked, wait for user interaction
+  const startVideo = () => {
+    video.play().catch(()=>{});
+    document.removeEventListener('touchstart', startVideo);
+    document.removeEventListener('click', startVideo);
+  };
+  document.addEventListener('touchstart', startVideo);
+  document.addEventListener('click', startVideo);
+});
 
     // ❄️ Snowfall effect (slow + full-screen)
     function createSnow() {
