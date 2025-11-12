@@ -12,7 +12,7 @@
 
 /* ===== Global Reset ===== */
 *{box-sizing:border-box;margin:0;padding:0;font-family: 'Segoe UI', Roboto, Arial, sans-serif}
-html,body{height:100%;overflow-x:hidden;overflow-y:auto;background:linear-gradient(180deg,#0024b5cc,#f700ff82)}
+html,body{height:100%;overflow-x:hidden;overflow-y:auto;background:linear-gradient(180deg,#5b6178b6,#f700ff82)}
 a{color:inherit}
 
 /* Container */
