@@ -158,19 +158,7 @@
       document.addEventListener("click", startMusic);
     });
 
-    // ❄️ Snowfall effect (slow + full-screen)
-    function createSnow() {
-      const snow = document.createElement("div");
-      snow.classList.add("snow");
-      snow.innerHTML = "❄️";
-      snow.style.left = Math.random() * 100 + "vw";
-      snow.style.animationDuration = (7 + Math.random() * 5) + "s";
-      snow.style.fontSize = (14 + Math.random() * 22) + "px";
-      document.getElementById("hearts-layer").appendChild(snow);
-      setTimeout(() => snow.remove(), 12000);
-    }
 
-    setInterval(createSnow, 200);
   </script>
 </body>
 </html>
