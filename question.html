@@ -101,6 +101,29 @@
     @media (max-width: 480px) {
       .msg strong { font-size: 2rem; }
     }
+
+      /* 🎬 Responsive video styling */
+  #accept-video-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 16px 0;
+  }
+
+  #accept-video-wrap video {
+    width: 100%;
+    max-width: 320px;      /* Max width for mobile */
+    height: auto;          /* Maintain aspect ratio */
+    border-radius: 16px;   /* Rounded corners */
+    object-fit: cover;     /* Fill nicely */
+    display: block;
+  }
+
+  @media (max-width: 480px) {
+    #accept-video-wrap video {
+      max-width: 260px;    /* Smaller width for small phones */
+    }
+  }
   </style>
 </head>
 
