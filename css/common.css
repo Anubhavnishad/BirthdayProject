@@ -3,7 +3,7 @@
 :root{
   --pink:#ff0066;
   --light:#fff0f6;
-  --card-bg: rgb(133, 240, 248);
+  --card-bg: rgb(195, 255, 241);
   --accent:#ec2a8b;
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.471);
   --maxw:1100px;
@@ -12,7 +12,7 @@
 
 /* ===== Global Reset ===== */
 *{box-sizing:border-box;margin:0;padding:0;font-family: 'Segoe UI', Roboto, Arial, sans-serif}
-html,body{height:100%;overflow-x:hidden;overflow-y:auto;background:linear-gradient(180deg,#5b6178b6,#f700ff82)}
+html,body{height:100%;overflow-x:hidden;overflow-y:auto;background:linear-gradient(180deg,#00e5ff,#bebbbe82)}
 a{color:inherit}
 
 /* Container */
