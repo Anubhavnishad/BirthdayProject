@@ -42,7 +42,7 @@ if($('#gifts-grid')){
   // Big first box
   const bigBox = document.createElement('div');
   bigBox.className = 'gift-box big';
-  bigBox.textContent = 'TAP🎁';
+  bigBox.textContent = 'TAP';
   // Create audio element
    const audio = document.getElementById('bgAudio');
    audio.play();
