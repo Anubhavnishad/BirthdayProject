@@ -304,7 +304,7 @@ a{color:inherit}
   display: block;
   margin-top: 25px;
   font-size: clamp(1.8rem, 6vw, 2.6rem); /* double size */
-  color: rgb(195, 0, 255);
+  color: rgb(0, 0, 0);
   text-align: justify;
   font-weight: 700;
   text-shadow: 0 0 12px rgba(255, 45, 149, 0.4),
